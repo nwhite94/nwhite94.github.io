@@ -1,0 +1,346 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(75px, auto);
+    background-color: cadetblue;
+    justify-content: space-evenly;
+}
+
+#title {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 5px;
+}
+
+#signUpHidden {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 5px;
+    height: 30px;
+    width: 60px;
+}
+
+#signInHidden {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 100px;
+    padding: 5px;
+    height: 30px;
+    width: 60px;
+}
+
+#Cars {
+    grid-column: 2;
+    grid-row: 2 / 6;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: azure;
+    width: 75%;
+}
+
+#new-car {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#new-make {
+    grid-column: 1;
+    grid-row: 2;
+    height: 30px;
+    width: 80%;
+}
+
+#new-model {
+    grid-column: 1;
+    grid-row: 3;
+    height: 30px;
+    width: 80%;
+}
+
+#new-year {
+    grid-column: 1;
+    grid-row: 4;
+    height: 30px;
+    width: 80%;
+}
+
+#new-mileage {
+    grid-column: 1;
+    grid-row: 5;
+    height: 30px;
+    width: 80%;
+}
+
+#new-price {
+    grid-column: 1;
+    grid-row: 6;
+    height: 30px;
+    width: 80%;
+}
+
+#sendCarInfo {
+    grid-column: 2;
+    grid-row: 5 / span 1;
+    height: 40px;
+    width: 60%;
+}
+
+
+/* Hidden Forms */
+
+
+/* Edit Form */
+
+
+/*-------------------------------------*/
+
+#hidden-form {
+    grid-column: 2;
+    grid-row: 2 / 6;
+    display: none;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: azure;
+    width: 75%;
+}
+
+#edit-car {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#update-make {
+    grid-column: 1;
+    grid-row: 2;
+    height: 30px;
+    width: 80%;
+}
+
+#update-model {
+    grid-column: 1;
+    grid-row: 3;
+    height: 30px;
+    width: 80%;
+}
+
+#update-year {
+    grid-column: 1;
+    grid-row: 4;
+    height: 30px;
+    width: 80%;
+}
+
+#update-mileage {
+    grid-column: 1;
+    grid-row: 5;
+    height: 30px;
+    width: 80%;
+}
+
+#update-price {
+    grid-column: 1;
+    grid-row: 6;
+    height: 30px;
+    width: 80%;
+}
+
+#updateCarInfo {
+    grid-column: 2;
+    grid-row: 5 / 6;
+    height: 50px;
+    width: 60%;
+}
+
+
+/*-------------------------------------*/
+
+
+/* Sign Up Form */
+
+
+/*-------------------------------------*/
+
+#sign-up {
+    grid-column: 3;
+    grid-row: 2 / 6;
+    display: none;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: azure;
+    width: 75%;
+}
+
+#sign-up-head {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#first-name {
+    grid-column: 1;
+    grid-row: 2;
+    height: 30px;
+    width: 80%;
+}
+
+#last-name {
+    grid-column: 1;
+    grid-row: 3;
+    height: 30px;
+    width: 80%;
+}
+
+#email {
+    grid-column: 1;
+    grid-row: 4;
+    height: 30px;
+    width: 80%;
+}
+
+#sign-up-pass {
+    grid-column: 1;
+    grid-row: 5;
+    height: 30px;
+    width: 80%;
+}
+
+#outputSignUp {
+    grid-column: 1 / 2;
+    grid-row: 6;
+}
+
+#signup {
+    grid-column: 2;
+    grid-row: 5 / 6;
+    height: 30px;
+    width: 60%;
+}
+
+
+/*-------------------------------------*/
+
+
+/* Sign In Form */
+
+
+/*-------------------------------------*/
+
+#sign-in {
+    grid-column: 3;
+    grid-row: 2 / 4;
+    display: none;
+    grid-gap: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: azure;
+    width: 75%;
+}
+
+#sign-in-head {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#username {
+    grid-column: 1;
+    grid-row: 2;
+    height: 30px;
+    width: 80%;
+}
+
+#sign-in-pass {
+    grid-column: 1;
+    grid-row: 3;
+    height: 30px;
+    width: 80%;
+}
+
+#outputSignIn {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#signin {
+    grid-column: 2;
+    grid-row: 2 / 3;
+    height: 30px;
+    width: 60%;
+}
+
+
+/*-------------------------------------*/
+
+
+/*-------------------------------------*/
+
+#list-Cars {
+    grid-column: 1;
+    grid-row: 1;
+    height: 40px;
+    width: 50%;
+}
+
+.StyleCars {
+    list-style-type: None;
+    border-style: solid;
+    border-width: 3px;
+    border-color: azure;
+    margin: 5px;
+}
+
+.make::before {
+    padding: 5px;
+    content: "Make: ";
+}
+
+.model {
+    text-indent: 50px;
+    padding: 5px;
+}
+
+.model::before {
+    content: "Model: ";
+}
+
+.year {
+    text-indent: 50px;
+    padding: 5px;
+}
+
+.year::before {
+    content: "Year: ";
+}
+
+.mileage {
+    text-indent: 50px;
+    padding: 5px;
+}
+
+.mileage::before {
+    content: "mileage: ";
+}
+
+.price {
+    text-indent: 50px;
+    padding: 5px;
+}
+
+.price::before {
+    content: "price: $";
+}
+
+.deleteCar {
+    margin: 5px;
+}
+
+.editCar {
+    margin: 5px;
+}

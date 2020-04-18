@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1 id="title">Dealership Car Inventory</h1>
+		<button id="signUpHidden">Sign up</button>
+		<button id="signInHidden">Sign In</button>
+		<div id="sign-up">
+			<h3 id="sign-up-head">Sign Up</h3>
+			<input type="text" name="firstName" id="first-name" placeholder="First Name..." required>
+			<input type="text" name="lastName" id="last-name" placeholder="Last Name..." required>
+			<input type="text" name="Email" id="email" placeholder="Email..." required>
+			<input type="password" name="signUpPass" id="sign-up-pass" placeholder="Password..." minlength="10" required>
+			<h4 id="outputSignUp"></h4>
+			<button id="signup">Sign Up</button>
+		</div>
+		<div id="sign-in">
+			<h3 id="sign-in-head">Sign In</h3>
+			<input type="text" name="username" id="username" placeholder="Email...">
+			<input type="password" name="signInPass" id="sign-in-pass" placeholder="Password...">
+			<h4 id="outputSignIn"></h4>
+			<button id="signin">Sign In</button>
+		</div>
+		<div id="Cars">
+			<h3 id="new-car">Add a New Car</h3>
+			<input name="newMake" id="new-make" placeholder="Make go here...">
+			<input name="newModel" id="new-model" placeholder="Model goes here...">
+			<input name="newYear" id="new-year" placeholder="Year goes here...">
+			<input name="newMileage" id="new-mileage" placeholder="Mileage goes here...">
+			<input name="newPrice" id="new-price" placeholder="Price goes here...">
+			<button id="sendCarInfo">Send To Inventory</button>
+		</div>
+		<div id="hidden-form">
+			<h3 id="edit-car">Edit exsisting car</h3>
+			<input name="updateMake" id="update-make">
+			<input name="updateModel" id="update-model">
+			<input name="updateYear" id="update-year">
+			<input name="updateMileage" id="update-mileage">
+			<input name="updatePrice" id="update-price">
+			<button id="updateCarInfo">Update Car Inventory</button>
+		</div>
+		<ol id="list-Cars"></ol>
+		<script src="Cars.js"></script>
+	</body>
+</html>
